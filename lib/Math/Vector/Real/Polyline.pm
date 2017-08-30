@@ -148,7 +148,7 @@ This module implements several algorithms related to polygonal chains
 or polylines.
 
 Note that the module can handle polylines in spaces of any dimension
-(not just 2D).
+(not just 2D) and it does not require their vertices to be coplanar.
 
 =head2 API
 
