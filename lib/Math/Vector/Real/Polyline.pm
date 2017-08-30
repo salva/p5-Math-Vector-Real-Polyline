@@ -35,8 +35,8 @@ sub dist2_to_point {
 sub dist2_to_segment {
     my ($self, $a, $b) = @_;
     my $min_d2 = $self->[0]->dist2($a);
-    for my $i (1..$#self) {
-        my $d2 = Math::Vector::Real->dist2_between_segments($a, b,
+    for my $i (1..$#$self) {
+        my $d2 = Math::Vector::Real->dist2_between_segments($a, $b,
                                                             $self->[$i - 1], $self->[$i]);
         $min_d2 = $d2 if $d2 < $min_d2;
     }
