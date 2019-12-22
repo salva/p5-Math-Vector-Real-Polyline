@@ -7,4 +7,9 @@ WriteMakefile( NAME          => 'Math::Vector::Real::Polyline',
                ABSTRACT_FROM => 'lib/Math/Vector/Real/Polyline.pm',
                AUTHOR        => 'Salvador Fandino <sfandino@yahoo.com>',
                LICENSE       => 'perl',
+               META_MERGE    => {
+                   resources => {
+                       repository => 'https://github.com/salva/p5-Math-Vector-Real-Polyline',
+                   },
+               },
              );
